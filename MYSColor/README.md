@@ -1,5 +1,5 @@
-# MYSTab
+# MYSColor
 
-优雅的解决Tabbar切换布局重绘新版方案
+TabBar,TabView切换动态更改颜色
 
-![](https://github.com/Nightmare-MYS/MYS_Flutter/blob/master/MYSTabBar/demo.gif)
+![](https://github.com/Nightmare-MYS/MYS_Flutter/blob/master/MYSColor/demo.gif)
