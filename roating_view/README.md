@@ -10,9 +10,9 @@ Import Rotated View:
 ```dart
 import 'package:rotated_view/rotated_view.dart';
 ```
-## Full screen usage
+## usage
 
-Given a `ImageProvider imageProvider` (such as [AssetImage](https://docs.flutter.io/flutter/painting/AssetImage-class.html) or [NetworkImage](https://docs.flutter.io/flutter/painting/NetworkImage-class.html)):
+Given a `child Widget` :
 
 ```dart
 @override
@@ -24,3 +24,14 @@ Widget build(BuildContext context) {
   );
 }
 ```
+
+Result: 
+
+![In action](https://github.com/renancaraujo/photo_view/blob/master/screen1.gif)
+
+### More screenshots
+
+
+| Small image | Animated GIF  | Limited scale | Hero animation |
+| ------------- | ------------- | ------------- | ------------- |
+| ![In action](https://github.com/renancaraujo/photo_view/blob/master/screen2.gif) | ![In action](https://github.com/renancaraujo/photo_view/blob/master/screen3.gif) | ![In action](https://github.com/renancaraujo/photo_view/blob/master/screen4.gif) | ![In action](https://github.com/renancaraujo/photo_view/blob/master/screen6.gif) |
