@@ -132,16 +132,16 @@ class _CoolAnimationState extends State<CoolAnimation>
     print('maxRadius=======>>>>>${maxRadius}');
     animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 2000),
+      duration: Duration(milliseconds: 1200),
     );
     endAnimationCTL = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 1000),
+      duration: Duration(milliseconds: 500),
     )..addListener(() {
         setState(() {});
       });
     rightCircleRadius = Tween<double>(
-      begin: 30.0,
+      begin: widget.iconSize.width / 2,
       // end: 100,
       end: maxRadius,
     ).animate(
@@ -175,7 +175,7 @@ class _CoolAnimationState extends State<CoolAnimation>
     leftCircleRadius = Tween<double>(
       begin: maxRadius,
       // begin: 100,
-      end: 30,
+      end: widget.iconSize.width / 2,
       // end: getRadius(point1, point2),
     ).animate(
       CurvedAnimation(
