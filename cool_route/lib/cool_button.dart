@@ -228,6 +228,9 @@ class _CoolAnimationState extends State<CoolAnimation>
   double maxRadius = 0;
   @override
   Widget build(BuildContext context) {
+    if (endAnimationCTL.isCompleted) {
+      return widget.child;
+    }
     // return Text('data');
     return Scaffold(
       backgroundColor: Colors.transparent,

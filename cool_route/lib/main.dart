@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'animat_example.dart';
+
+import 'cool_button.dart';
 import 'cool_route.dart';
 
 void main() {
@@ -51,13 +52,14 @@ class _PageOneState extends State<PageOne> {
             child: Text('页面1'),
           ),
           Align(
-              alignment: Alignment(0, 0.5),
-              child: CoolButton(
-                curPageAccentColor: Color(0xff013bca),
-                buttonColor: Color(0xfffcb7d6),
-                nextButtonColor: Colors.white,
-                pushPage: PageTwo(),
-              )),
+            alignment: Alignment(0, 0.5),
+            child: CoolButton(
+              curPageAccentColor: Color(0xff013bca),
+              buttonColor: Color(0xfffcb7d6),
+              nextButtonColor: Colors.white,
+              pushPage: PageTwo(),
+            ),
+          ),
         ],
       ),
     );
@@ -99,13 +101,14 @@ class PageThree extends StatelessWidget {
             child: Text('页面3'),
           ),
           Align(
-              alignment: Alignment(0, 0.5),
-              child: CoolButton(
-                curPageAccentColor: Colors.white,
-                buttonColor: Colors.green,
-                nextButtonColor: Colors.red,
-                pushPage: PageFour(),
-              )),
+            alignment: Alignment(0, 0.5),
+            child: CoolButton(
+              curPageAccentColor: Colors.white,
+              buttonColor: Colors.green,
+              nextButtonColor: Colors.red,
+              pushPage: PageFour(),
+            ),
+          ),
         ],
       ),
     );
